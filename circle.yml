@@ -1,0 +1,6 @@
+test:
+  override:
+    - wget http://ambermd.org/downloads/ambertools-dev/AmberTools18-dev.tar.gz
+  post:
+    - mkdir $CIRCLE_ARTIFACTS/ambertools-ci-prep
+    - mv AmberTools18-dev.tar.gz $CIRCLE_ARTIFACTS/ambertools-ci-prep/
